@@ -1,13 +1,14 @@
-(function() {
-    emailjs.init("Dr-ptPWC_tY4JcJJ-"); 
+// Kirim Pesan Let's Connect
+(function () {
+    emailjs.init("Dr-ptPWC_tY4JcJJ-");
 })();
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
 
     // Ambil nilai dari input form
     const formData = {
-        to_name: "Admin",  // Nama penerima (opsional)
+        to_name: "Admin", // Nama penerima (opsional)
         from_name: document.getElementById("name").value, // Nama user
         reply_to: document.getElementById("email").value, // Email user
         message: document.getElementById("message").value // Pesan user
