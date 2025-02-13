@@ -16,18 +16,28 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
-    opacity: 0.08; 
+    opacity: 0.08;
     pointer-events: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Inter', sans-serif;
-    font-weight: 700; /* Bold */
+    font-weight: 700;
+    /* Bold */
 }
 
-p, a, span, li {
+p,
+a,
+span,
+li {
     font-family: 'Inter', sans-serif;
-    font-weight: 400; /* Normal */
+    font-weight: 400;
+    /* Normal */
 }
 
 .cursor {
@@ -66,8 +76,13 @@ p, a, span, li {
 }
 
 @keyframes orbit {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 body:hover .cursor {
@@ -190,7 +205,8 @@ body:hover .cursor {
     padding: 100px 0;
 }
 
-.experience-item, .project-item {
+.experience-item,
+.project-item {
     background: rgba(20, 33, 61, 0.7);
     padding: 20px;
     border-radius: 10px;
@@ -199,24 +215,28 @@ body:hover .cursor {
     transition: all 0.3s ease-in-out;
 }
 
-.experience-item li, .project-item span {
+.experience-item li,
+.project-item span {
     font-size: 14px;
 }
 
-.experience-item:hover, .project-item:hover {
+.experience-item:hover,
+.project-item:hover {
     background: linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(10, 25, 47, 0.7));
     border: 1px solid #64ffda;
     transform: translateY(-5px);
 }
 
-.experience-item h3, .project-item h3 {
+.experience-item h3,
+.project-item h3 {
     font-size: 1.5rem;
     color: #ccd6f6;
     margin-bottom: 5px;
 }
 
 .load-more-container {
-    text-align: left; /* Posisi di kiri */
+    text-align: left;
+    /* Posisi di kiri */
     margin-top: 30px;
 }
 
@@ -231,8 +251,10 @@ body:hover .cursor {
 }
 
 .load-more-button:hover {
-    color: #00c3ff; /* Warna berubah saat hover */
-    transform: translateX(5px); /* Geser sedikit ke kanan */
+    color: #00c3ff;
+    /* Warna berubah saat hover */
+    transform: translateX(5px);
+    /* Geser sedikit ke kanan */
 }
 
 .load-more-button::after {
@@ -243,7 +265,8 @@ body:hover .cursor {
 }
 
 .load-more-button:hover::after {
-    transform: translateX(3px); /* Efek panah bergeser lebih jauh */
+    transform: translateX(3px);
+    /* Efek panah bergeser lebih jauh */
 }
 
 .company {
@@ -303,7 +326,8 @@ body:hover .cursor {
     margin-bottom: 5px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -352,19 +376,22 @@ body:hover .cursor {
 .tools-track {
     display: flex;
     gap: 30px;
-    width: calc(60px * 18); /* Hitung total panjang agar bisa looping sempurna */
+    width: calc(60px * 18);
+    /* Hitung total panjang agar bisa looping sempurna */
     animation: scrollInfinite 12s linear infinite;
 }
 
 .tools-item img {
     height: 60px;
     width: auto;
-    filter: grayscale(100%) brightness(2); /* Awal transparan (putih) */
+    filter: grayscale(100%) brightness(2);
+    /* Awal transparan (putih) */
     transition: filter 0.3s ease-in-out;
 }
 
 .tools-item img:hover {
-    filter: grayscale(0%) brightness(1); /* Berubah jadi versi berwarna */
+    filter: grayscale(0%) brightness(1);
+    /* Berubah jadi versi berwarna */
     transform: scale(1.2);
 }
 
@@ -373,6 +400,7 @@ body:hover .cursor {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
     }
@@ -427,6 +455,7 @@ canvas {
         width: 30%;
         left: 2%;
     }
+
     .main-content {
         width: 65%;
         margin-left: 35%;
@@ -434,15 +463,22 @@ canvas {
     }
 }
 
+p, li {
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     .social-icons {
         justify-content: center;
-        margin-top: 10px; /* Kurangi jarak dari atas */
+        margin-top: 10px;
+        /* Kurangi jarak dari atas */
     }
+
     .container {
         flex-direction: column;
         padding: 10px;
     }
+
     .sidebar {
         width: 100%;
         position: relative;
@@ -452,17 +488,21 @@ canvas {
         text-align: center;
         padding: 20px 0;
     }
+
     .sidebar p {
         margin-top: 5px;
     }
+
     .main-content {
         width: 100%;
         margin-left: 0;
         padding: 20px;
     }
+
     .social-icons {
         justify-content: center;
     }
+
     .sidebar .nav-links {
         display: none;
     }
@@ -472,40 +512,52 @@ canvas {
     .container {
         margin: 10px 3px;
     }
+
     .container .sidebar {
         margin-bottom: -100px;
     }
+
     .social-icons {
-        margin-top: 5px; 
+        margin-top: 5px;
         gap: 8px;
     }
+
     .sidebar h1 {
         font-size: 1.8rem;
     }
+
     .sidebar p {
         font-size: 1rem;
         margin-top: 3px;
     }
+
     .btn-get-started {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+
     .container {
         padding: 5px;
     }
+
     .main-content {
         padding: 15px;
     }
+
     .main-content .experience {
         margin-top: -220px;
     }
-    .experience-item, .project-item {
+
+    .experience-item,
+    .project-item {
         padding: 15px;
         margin-bottom: 15px;
     }
+
     .tools-slider {
         padding: 10px 0;
     }
+
     .tools-item img {
         height: 40px;
     }
