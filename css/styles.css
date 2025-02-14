@@ -234,6 +234,16 @@ body:hover .cursor {
     margin-bottom: 5px;
 }
 
+.project-item {
+    margin-bottom: 30px;
+}
+.project-image {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .load-more-container {
     text-align: left;
     /* Posisi di kiri */
